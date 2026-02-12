@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CI-CD Pipeline</title>
+    <title>CI/CD Pipeline Demo</title>
+
     <style>
         body {
-            background-color: #f4f4f4;
+            background: #f2f6f9;
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            font-family: Arial, sans-serif;
-            margin-top: 100px;
+            margin-top: 120px;
         }
+
+        .card {
+            background: white;
+            width: 50%;
+            margin: auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
         h1 {
             color: #2c3e50;
         }
+
         h2 {
-            color: #16a085;
+            color: #27ae60;
         }
+
         p {
             font-size: 18px;
             color: #555;
         }
-        .box {
-            background: white;
-            padding: 30px;
-            width: 50%;
-            margin: auto;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
-        }
     </style>
 </head>
+
 <body>
 
-    <div class="box">
-        <h1>🚀 Welcome to CI-CD Pipeline</h1>
-        <h2>Deployed via Jenkins + Docker</h2>
-        <p>Hello Arif 👋</p>
-        <p>This application is automatically deployed from GitHub.</p>
-    </div>
+<div class="card">
+    <h1>🚀 CI/CD Pipeline Working!</h1>
+    <h2>Hello Arif 👋</h2>
+
+    <p>This website is deployed automatically using:</p>
+
+    <p><b>GitHub → Jenkins → Docker → DockerHub → Web Server</b></p>
+
+    <p>Build triggered by Git push.</p>
+
+    <p>Last updated: VERSION-3</p>
+</div>
 
 </body>
 </html>
